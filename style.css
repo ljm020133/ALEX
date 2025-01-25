@@ -1,0 +1,65 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: linear-gradient(135deg, #f0f4f7, #d9e8ff);
+    color: #333;
+    width: 400px; /* Increased width for the popup */
+    min-height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  
+  /* Container */
+  #container {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header */
+  h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0066cc;
+    margin-bottom: 10px;
+  }
+  
+  /* Tab List */
+  #tabList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Use full width of the popup */
+  }
+  
+  #tabList li {
+    background: #fff;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    white-space: normal;      /* Enable wrapping */
+    word-wrap: break-word;    /* Allow wrapping */
+    overflow: hidden;          /* Hide overflow content */
+    text-overflow: ellipsis;   /* Add ellipsis if text overflows */
+  }
+  
+  #tabList li:hover {
+    background: #e6f2ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Optional Icon Styling */
+  #tabList li::before {
+    content: '📄';
+    margin-right: 8px;
+    font-size: 16px;
+  }
+  
