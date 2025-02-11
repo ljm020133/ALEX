@@ -3,7 +3,13 @@
   "name": "Tab Title Extractor",
   "version": "1.0",
   "description": "Extract and display titles of all open tabs.",
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "downloads"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "https://api.openai.com/*"
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": "image/icon.png"
